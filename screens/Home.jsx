@@ -14,6 +14,8 @@ const { width, height } = Dimensions.get("screen");
 import data from "../assets/data";
 import NextButton from "../components/NextButton";
 
+
+
 const Indicator = ({ scrollX }) => {
   return (
     <View

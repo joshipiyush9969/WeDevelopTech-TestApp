@@ -11,6 +11,7 @@ import Result from "./screens/Result";
 
 //fonts
 import { useFonts } from "expo-font";
+import Test from "./screens/Test";
 
 const Stack = createNativeStackNavigator();
 function AppNav() {
@@ -32,7 +33,7 @@ function AppNav() {
     return (
       <NavigationContainer>
         <Stack.Navigator
-          initialRouteName="Home"
+          initialRouteName="Test"
           screenOptions={{
             headerShown: false,
             contentStyle: {
@@ -40,6 +41,7 @@ function AppNav() {
             },
           }}
         >
+          <Stack.Screen name ="Test" component={Test}/>
           <Stack.Screen name="Home" component={Home} />
           <Stack.Screen name="Disclaimer" component={Disclaimer} />
           <Stack.Screen name="Location" component={Location} />
